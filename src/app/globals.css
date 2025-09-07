@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Blanco */
+    --foreground: 240 10% 20%; /* Gris oscuro (para texto principal) */
+    --card: 0 0% 100%; /* Blanco */
+    --card-foreground: 240 10% 20%; /* Gris oscuro */
+    --popover: 0 0% 100%; /* Blanco */
+    --popover-foreground: 240 10% 20%; /* Gris oscuro */
+    --primary: 270 65% 50%; /* Morado */
+    --primary-foreground: 0 0% 100%; /* Blanco (para texto sobre morado) */
+    --secondary: 240 8% 93%; /* Gris muy claro */
+    --secondary-foreground: 240 10% 20%; /* Gris oscuro */
+    --muted: 240 8% 93%; /* Gris muy claro */
+    --muted-foreground: 240 5% 45%; /* Gris medio */
+    --accent: 130 50% 45%; /* Verde */
+    --accent-foreground: 0 0% 100%; /* Blanco (para texto sobre verde) */
+    --destructive: 0 84.2% 60.2%; /* Rojo estándar para errores */
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 85%; /* Gris claro para bordes */
+    --input: 240 10% 85%; /* Gris claro para bordes de input */
+    --ring: 270 65% 50%; /* Morado (para anillo de foco) */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 12%; /* Gris muy oscuro (casi negro) */
+    --foreground: 0 0% 95%; /* Blanco/Gris muy claro (para texto principal) */
+    --card: 240 8% 18%; /* Gris oscuro */
+    --card-foreground: 0 0% 95%; /* Blanco/Gris muy claro */
+    --popover: 240 10% 12%; /* Gris muy oscuro */
+    --popover-foreground: 0 0% 95%; /* Blanco/Gris muy claro */
+    --primary: 270 70% 65%; /* Morado (más claro/brillante para modo oscuro) */
+    --primary-foreground: 0 0% 100%; /* Blanco */
+    --secondary: 240 6% 25%; /* Gris oscuro */
+    --secondary-foreground: 0 0% 95%; /* Blanco/Gris muy claro */
+    --muted: 240 6% 25%; /* Gris oscuro */
+    --muted-foreground: 240 5% 65%; /* Gris claro */
+    --accent: 130 55% 55%; /* Verde (más claro/brillante para modo oscuro) */
+    --accent-foreground: 0 0% 100%; /* Blanco */
+    --destructive: 0 70% 50%; /* Rojo oscuro para errores */
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 30%; /* Gris medio-oscuro para bordes */
+    --input: 240 5% 30%; /* Gris medio-oscuro para bordes de input */
+    --ring: 270 70% 65%; /* Morado (para anillo de foco en modo oscuro) */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
