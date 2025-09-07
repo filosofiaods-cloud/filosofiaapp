@@ -1,7 +1,7 @@
 
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Building2 } from "lucide-react";
 import Image from "next/image";
 
@@ -74,13 +74,15 @@ export function CertificateDisplay({
   type
 }: CertificateDisplayProps) {
 
+    const justThePeriod = completionTitle.split(':')[0];
+
     const certificateMainTitle = type === 'grade'
     ? `CICLO DE FORMACIÓN - ${completionTitle.toUpperCase()}`
-    : `${completionTitle.toUpperCase()}`;
+    : `${justThePeriod.toUpperCase()}`;
 
     const completionText = type === 'grade'
     ? `Por haber terminado satisfactoriamente todas las actividades del ciclo y haber aprobado la evaluación final, correspondiente al diseño curricular Carlitos ODS-4.0`
-    : `Por haber terminado satisfactoriamente todas las actividades del periodo y haber aprobado la evaluación final, correspondiente al ${completionTitle.toLowerCase()} del diseño curricular Carlitos ODS-4.0`;
+    : `Por haber terminado satisfactoriamente todas las actividades del periodo y haber aprobado la evaluación final, correspondiente al ${justThePeriod.toLowerCase()} del diseño curricular Carlitos ODS-4.0`;
 
 
   return (
@@ -133,7 +135,7 @@ export function CertificateDisplay({
             </div>
             <div className="w-24 h-24 relative mt-4 md:mt-0">
                 <Image
-                    src="/images/carlitos_personaje.png"
+                    src="/images/carlitos-logo.png"
                     alt="Personaje Carlitos"
                     width={96}
                     height={96}
@@ -143,60 +145,6 @@ export function CertificateDisplay({
         </div>
 
       </Card>
-      
-       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap');
-
-        .font-serif {
-            font-family: 'Merriweather', serif;
-        }
-        .font-sans {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        @media print {
-          body * {
-            visibility: hidden;
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
-          }
-          .printable-certificate-component,
-          .printable-certificate-component * {
-            visibility: visible;
-          }
-          .printable-certificate-component {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100vh; /* Adjust for landscape */
-            padding: 0; 
-            margin: 0; 
-            box-shadow: none !important;
-            border: none !important;
-            background: white !important;
-            display: flex; 
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-          }
-          header, footer, nav, button, [role="button"], aside, .no-print {
-            display: none !important;
-          }
-           body {
-             background-color: white !important; 
-           }
-           main {
-             padding: 0 !important;
-             margin: 0 !important;
-             max-width: 100vw !important;
-           }
-        }
-         @page {
-          size: landscape;
-          margin: 0;
-        }
-      `}</style>
     </div>
   );
 }
