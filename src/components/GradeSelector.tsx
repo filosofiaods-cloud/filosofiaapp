@@ -27,7 +27,7 @@ const gradeOptions: GradeOption[] = [
         <p className="mt-2 text-sm text-muted-foreground">Estudiarás la noción de apariencia en Arentdt, el pensamiento teleológico y el cambio de época. Recibirás una primera aproximación a la Sociedad de la información y del Conocimiento.</p>
       </>
     ), 
-    imageUrl: '/images/10-main.png',
+    imageUrl: '/images/filo10.png',
     imageHint: 'philosophy statue',
     buttonText: 'Comienza ya', 
   },
@@ -40,7 +40,7 @@ const gradeOptions: GradeOption[] = [
         <p className="mt-2 text-sm text-muted-foreground">Estudiarás los conceptos de juego y poder, profundizarás en la noción de "cambio de época", reflexionarás sobre la ética ambiental desde la perspectiva de la propuesta curricular "Carlitos ODS-4.0".</p>
       </>
     ), 
-    imageUrl: '/images/11-main.png',
+    imageUrl: '/images/filo11.png',
     imageHint: 'philosophy thinker',
     buttonText: 'Comienza ya',
   },
