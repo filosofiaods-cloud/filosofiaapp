@@ -3,7 +3,7 @@
 
 import { useParams, useRouter } from 'next/navigation';
 import { useProgress } from '@/context/ProgressContext';
-import { getPeriodById } from '@/lib/course-data';
+import { getGradeById, getPeriodById } from '@/lib/course-data';
 import { CertificateDisplay } from '@/components/CertificateDisplay';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Download, Loader2, ShieldAlert, User } from 'lucide-react';
@@ -40,9 +40,10 @@ export default function PeriodCertificatePage() {
   }
 
   const period = getPeriodById(gradeId, periodId);
+  const grade = getGradeById(gradeId);
 
-  if (!period) {
-    return <div className="text-center py-10">Período de estudio no encontrado. <Button onClick={() => router.push(`/${gradeId}`)}>Volver al Ciclo</Button></div>;
+  if (!period || !grade) {
+    return <div className="text-center py-10">Período o ciclo de estudio no encontrado. <Button onClick={() => router.push('/')}>Volver al inicio</Button></div>;
   }
   
   if (!currentUser) {
@@ -98,6 +99,8 @@ export default function PeriodCertificatePage() {
         completionTitle={period.title} 
         studentName={studentName}
         type="period"
+        periodId={periodId}
+        gradeTitle={grade.title}
       />
 
       <style jsx global>{`

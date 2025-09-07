@@ -10,6 +10,8 @@ interface CertificateDisplayProps {
   studentName: string;
   completionDate?: string;
   type: 'grade' | 'period';
+  periodId?: string;
+  gradeTitle?: string;
 }
 
 const SealIcon = () => (
@@ -65,75 +67,84 @@ const SealIcon = () => (
 );
 
 const DiamondDecorator = () => (
-    <span className="text-white/80 mx-4 text-sm">◇</span>
+    <span className="text-white/80 mx-2 sm:mx-4 text-sm">◇</span>
 );
 
 export function CertificateDisplay({
   completionTitle,
   studentName,
-  type
+  type,
+  periodId,
+  gradeTitle
 }: CertificateDisplayProps) {
 
-    const justThePeriod = completionTitle.split(':')[0];
+    const periodShortName = type === 'period' ? completionTitle.split('.')[0] : '';
+    
+    let gradeShortName = '';
+    if (gradeTitle === 'Décimo Grado') {
+        gradeShortName = '10°';
+    } else if (gradeTitle === 'Undécimo Grado') {
+        gradeShortName = '11°';
+    }
 
     const certificateMainTitle = type === 'grade'
     ? `CICLO DE FORMACIÓN - ${completionTitle.toUpperCase()}`
-    : `${justThePeriod.toUpperCase()}`;
+    : `${periodShortName}-${gradeShortName}`;
 
     const completionText = type === 'grade'
     ? `Por haber terminado satisfactoriamente todas las actividades del ciclo y haber aprobado la evaluación final, correspondiente al diseño curricular Carlitos ODS-4.0`
-    : `Por haber terminado satisfactoriamente todas las actividades del periodo y haber aprobado la evaluación final, correspondiente al ${justThePeriod.toLowerCase()} del diseño curricular Carlitos ODS-4.0`;
+    : `Por haber terminado satisfactoriamente todas las actividades del periodo y haber aprobado la evaluación final, correspondiente al ${periodShortName.toLowerCase()} del diseño curricular Carlitos ODS-4.0`;
 
 
   return (
     <div className="printable-certificate-component max-w-4xl mx-auto font-sans shadow-2xl">
       <Card className="border-0 rounded-lg overflow-hidden relative bg-white">
         {/* Blue Section */}
-        <div id="blue-section" className="bg-[#a0ced9] text-white p-8 md:p-12 text-center">
-          <div className="flex flex-col items-center justify-center mb-6">
-            <Building2 className="h-8 w-8 mb-2" />
-            <p className="text-sm tracking-widest font-light">CARLITOS ODS-4.0</p>
+        <div id="blue-section" className="bg-[#a0ced9] text-white px-6 sm:px-8 md:px-12 pt-6 sm:pt-8 md:pt-12 pb-24 sm:pb-28 text-center">
+          <div className="flex flex-col items-center justify-center mb-4 sm:mb-6">
+            <Building2 className="h-6 w-6 sm:h-8 sm:w-8 mb-2" />
+            <p className="text-xs sm:text-sm tracking-widest font-light">CARLITOS ODS-4.0</p>
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-wider mb-4">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold tracking-wider mb-4">
             CERTIFICADO
           </h1>
-          <div className="flex items-center justify-center mb-6">
+          <div className="flex items-center justify-center mb-4 sm:mb-6">
             <div className="flex-grow border-t border-white/50"></div>
             <DiamondDecorator />
-            <h2 className="text-lg md:text-xl font-semibold tracking-widest whitespace-nowrap">
+            <h2 className="text-base sm:text-lg md:text-xl font-semibold tracking-widest text-center">
                 {certificateMainTitle}
             </h2>
             <DiamondDecorator />
             <div className="flex-grow border-t border-white/50"></div>
           </div>
-          <p className="text-base md:text-lg mb-2">Otorgado a:</p>
-          <p className="text-3xl md:text-4xl font-bold mb-4">
+          <p className="text-sm sm:text-base md:text-lg mb-2">Otorgado a:</p>
+          <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             {studentName || "Estudiante Dedicado"}
           </p>
-          <p className="text-sm md:text-base max-w-2xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-base max-w-2xl mx-auto">
             {completionText}
           </p>
         </div>
 
         {/* White Section */}
-        <div className="bg-white px-8 pt-16 pb-8 flex flex-col md:flex-row items-center justify-between relative">
+        <div className="bg-white px-6 sm:px-8 pt-24 sm:pt-28 pb-8 flex flex-col md:flex-row items-center justify-between relative gap-y-8 md:gap-y-0">
             {/* Seal positioned absolutely relative to this white section */}
-            <div className="absolute top-[-50px] left-1/2 -translate-x-1/2 w-32 h-32 flex items-center justify-center">
-                 <div className="relative w-28 h-28">
+            <div className="absolute top-[-40px] sm:top-[-50px] left-1/2 -translate-x-1/2 w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center">
+                 <div className="relative w-24 h-24 sm:w-28 sm:h-28">
                     <SealIcon />
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 flex justify-center gap-1 mt-[-10px]">
-                        {Array.from({length: 7}).map((_, i) => (
-                            <div key={i} className="w-1 h-12 bg-[#a0ced9]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 flex justify-center gap-1 mt-[-14px] sm:mt-[-10px]">
+                        {Array.from({length: 5}).map((_, i) => (
+                            <div key={i} className="w-0.5 sm:w-1 h-10 sm:h-12 bg-[#a0ced9]"></div>
                         ))}
                     </div>
                 </div>
             </div>
 
             <div className="text-center md:text-left w-full md:w-auto">
-                <div className="border-t-2 border-gray-400 w-48 mx-auto md:mx-0 mb-2"></div>
-                <p className="text-sm text-gray-600">Dr. Richard Ayala Ardila</p>
+                <div className="border-t-2 border-gray-400 w-40 sm:w-48 mx-auto md:mx-0 mb-2"></div>
+                <p className="text-xs sm:text-sm text-gray-600">Dr. Richard Ayala Ardila</p>
             </div>
-            <div className="w-24 h-24 relative mt-4 md:mt-0">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 relative">
                 <Image
                     src="/images/carlitos-logo.png"
                     alt="Personaje Carlitos"
