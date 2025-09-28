@@ -164,7 +164,7 @@ export const courseContent: CourseContent = {
               title: 'Clase 1',
               content: geniallyIframePeriodo1,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 1 y desarrolla las actividades propuestas.',
-              imageUrl: '/images/per1/clase1.png',
+              imageUrl: '/images/11/periodo1/periodo1_clase1.png',
               imageHint: 'pensamiento abstracto'
             },
             {
@@ -172,7 +172,7 @@ export const courseContent: CourseContent = {
               title: 'Clase 2',
               content: geniallyIframePeriodo1,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 2 y desarrolla las actividades propuestas.',
-              imageUrl: '/images/per1/clase2.png',
+              imageUrl: '/images/11/periodo1/periodo1_clase2.png',
               imageHint: 'apariencia publica'
             },
             {
@@ -180,7 +180,7 @@ export const courseContent: CourseContent = {
               title: 'Clase 3',
               content: geniallyIframePeriodo1,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 3 y desarrolla las actividades propuestas.',
-              imageUrl: '/images/per1/clase3.png',
+              imageUrl: '/images/11/periodo1/periodo1_clase3.png',
               imageHint: 'accion politica'
             },
             {
@@ -188,7 +188,7 @@ export const courseContent: CourseContent = {
               title: 'Clase 4',
               content: geniallyIframePeriodo1,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 4 y desarrolla las actividades propuestas.',
-              imageUrl: '/images/per1/clase4.png',
+              imageUrl: '/images/11/periodo1/periodo1_clase4.png',
               imageHint: 'tragedia griega'
             },
             {
@@ -196,7 +196,7 @@ export const courseContent: CourseContent = {
               title: 'Clase 5',
               content: geniallyIframePeriodo1,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 5 y desarrolla las actividades propuestas.',
-              imageUrl: '/images/per1/clase5.png',
+              imageUrl: '/images/11/periodo1/periodo1_clase5.png',
               imageHint: 'heroe antiguo'
             },
              {
@@ -204,7 +204,7 @@ export const courseContent: CourseContent = {
               title: 'Clase 6',
               content: geniallyIframePeriodo1,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 6 y desarrolla las actividades propuestas.',
-              imageUrl: '/images/per1/clase6.png',
+              imageUrl: '/images/11/periodo1/periodo1_clase6.png',
               imageHint: 'catedral gotica'
             }
           ]
@@ -219,7 +219,7 @@ export const courseContent: CourseContent = {
                 title: 'Clase 1',
                 content: geniallyIframePeriodo2,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 1 y desarrolla las actividades propuestas.',
-                imageUrl: '/images/per2/periodo2-clase1.png',
+                imageUrl: '/images/11/periodo2/periodo2_clase1.png',
                 imageHint: 'manuscrito antiguo'
               },
               {
@@ -227,7 +227,7 @@ export const courseContent: CourseContent = {
                 title: 'Clase 2',
                 content: geniallyIframePeriodo2,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 2 y desarrolla las actividades propuestas.',
-                imageUrl: '/images/per2/periodo2-clase2.png',
+                imageUrl: '/images/11/periodo2/periodo2_clase2.png',
                 imageHint: 'brujula mapa'
               },
               {
@@ -235,7 +235,7 @@ export const courseContent: CourseContent = {
                 title: 'Clase 3',
                 content: geniallyIframePeriodo2,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 3 y desarrolla las actividades propuestas.',
-                imageUrl: '/images/per2/periodo2-clase3.png',
+                imageUrl: '/images/11/periodo2/periodo2_clase3.png',
                 imageHint: 'filosofo griego'
               },
               {
@@ -243,7 +243,7 @@ export const courseContent: CourseContent = {
                 title: 'Clase 4',
                 content: geniallyIframePeriodo2,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 4 y desarrolla las actividades propuestas.',
-                imageUrl: '/images/per2/periodo2-clase4.png',
+                imageUrl: '/images/11/periodo2/periodo2_clase4.png',
                 imageHint: 'reloj antiguo'
               },
               {
@@ -251,7 +251,7 @@ export const courseContent: CourseContent = {
                 title: 'Clase 5',
                 content: geniallyIframePeriodo2,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 5 y desarrolla las actividades propuestas.',
-                imageUrl: '/images/per2/periodo2-clase5.png',
+                imageUrl: '/images/11/periodo2/periodo2_clase5.png',
                 imageHint: 'cosmos galaxia'
               },
               {
@@ -259,7 +259,7 @@ export const courseContent: CourseContent = {
                 title: 'Clase 6',
                 content: geniallyIframePeriodo2,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 6 y desarrolla las actividades propuestas.',
-                imageUrl: '/images/per2/periodo2-clase6.png',
+                imageUrl: '/images/11/periodo2/periodo2_clase6.png',
                 imageHint: 'etica balanza'
               }
            ]
@@ -273,7 +273,7 @@ export const courseContent: CourseContent = {
               title: `Clase ${j + 1}`,
               content: geniallyIframePeriodo3,
               estimatedTime: `Ve a la página 4, haz clic en la Clase ${j + 1} y desarrolla las actividades propuestas.`,
-              imageUrl: `/images/per3/periodo3-clase${j + 1}.png`,
+              imageUrl: `/images/11/periodo3/periodo3_clase${j + 1}.png`,
               imageHint: 'debate publico'
           })),
         },
@@ -286,7 +286,7 @@ export const courseContent: CourseContent = {
               title: `Clase ${j + 1}`,
               content: geniallyIframePeriodo4,
               estimatedTime: `Ve a la página 4, haz clic en la Clase ${j + 1} y desarrolla las actividades propuestas.`,
-              imageUrl: `/images/per4/periodo4-clase${j + 1}.png`,
+              imageUrl: `/images/11/periodo4/periodo4_clase${j + 1}.png`,
               imageHint: 'redes neuronales'
           })),
         },
