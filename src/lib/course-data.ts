@@ -5,6 +5,10 @@ const geniallyIframePeriodo1 = `<div style="width: 100%;"><div style="position: 
 const geniallyIframePeriodo2 = `<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="2025 - Filosofía 10° Segundo periodo" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/677008c2ff740f4fdee57a43" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>`;
 const geniallyIframePeriodo3 = `<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="2025 - Filosofía 10° Tercer periodo" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/6770d46c8f8f54fd4b7ede23" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>`;
 const geniallyIframePeriodo4 = `<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="2025 - Filosofía 10° Cuarto periodo" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/6772b5961e445e5f56720ba3" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>`;
+const geniallyIframePeriodo1_11 = `<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="2025 - Filosofía 11° Primer Periodo" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/677757b883c58adba3eb9e7a" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>`;
+const geniallyIframePeriodo2_11 = `<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="2025 - Filosofía 11° Segundo periodo" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/677d109970101ab4cc47d2c9" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>`;
+const geniallyIframePeriodo3_11 = `<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="2025 - Filosofía 11° Tercer periodo" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/6783c9adfeb960f8f0ad31e4" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>`;
+const geniallyIframePeriodo4_11 = `<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="2025 - Filosofía 11° Cuarto periodo" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/678983df97321f1fb588272e" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>`;
 
 export const courseContent: CourseContent = {
   grades: [
@@ -162,7 +166,7 @@ export const courseContent: CourseContent = {
             {
               id: '1',
               title: 'Clase 1',
-              content: geniallyIframePeriodo1,
+              content: geniallyIframePeriodo1_11,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 1 y desarrolla las actividades propuestas.',
               imageUrl: '/images/11/periodo1/periodo1_clase1.png',
               imageHint: 'pensamiento abstracto'
@@ -170,7 +174,7 @@ export const courseContent: CourseContent = {
             {
               id: '2',
               title: 'Clase 2',
-              content: geniallyIframePeriodo1,
+              content: geniallyIframePeriodo1_11,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 2 y desarrolla las actividades propuestas.',
               imageUrl: '/images/11/periodo1/periodo1_clase2.png',
               imageHint: 'apariencia publica'
@@ -178,7 +182,7 @@ export const courseContent: CourseContent = {
             {
               id: '3',
               title: 'Clase 3',
-              content: geniallyIframePeriodo1,
+              content: geniallyIframePeriodo1_11,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 3 y desarrolla las actividades propuestas.',
               imageUrl: '/images/11/periodo1/periodo1_clase3.png',
               imageHint: 'accion politica'
@@ -186,7 +190,7 @@ export const courseContent: CourseContent = {
             {
               id: '4',
               title: 'Clase 4',
-              content: geniallyIframePeriodo1,
+              content: geniallyIframePeriodo1_11,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 4 y desarrolla las actividades propuestas.',
               imageUrl: '/images/11/periodo1/periodo1_clase4.png',
               imageHint: 'tragedia griega'
@@ -194,7 +198,7 @@ export const courseContent: CourseContent = {
             {
               id: '5',
               title: 'Clase 5',
-              content: geniallyIframePeriodo1,
+              content: geniallyIframePeriodo1_11,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 5 y desarrolla las actividades propuestas.',
               imageUrl: '/images/11/periodo1/periodo1_clase5.png',
               imageHint: 'heroe antiguo'
@@ -202,7 +206,7 @@ export const courseContent: CourseContent = {
              {
               id: '6',
               title: 'Clase 6',
-              content: geniallyIframePeriodo1,
+              content: geniallyIframePeriodo1_11,
               estimatedTime: 'Ve a la página 4, haz clic en la Clase 6 y desarrolla las actividades propuestas.',
               imageUrl: '/images/11/periodo1/periodo1_clase6.png',
               imageHint: 'catedral gotica'
@@ -217,7 +221,7 @@ export const courseContent: CourseContent = {
               {
                 id: '1',
                 title: 'Clase 1',
-                content: geniallyIframePeriodo2,
+                content: geniallyIframePeriodo2_11,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 1 y desarrolla las actividades propuestas.',
                 imageUrl: '/images/11/periodo2/periodo2_clase1.png',
                 imageHint: 'manuscrito antiguo'
@@ -225,7 +229,7 @@ export const courseContent: CourseContent = {
               {
                 id: '2',
                 title: 'Clase 2',
-                content: geniallyIframePeriodo2,
+                content: geniallyIframePeriodo2_11,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 2 y desarrolla las actividades propuestas.',
                 imageUrl: '/images/11/periodo2/periodo2_clase2.png',
                 imageHint: 'brujula mapa'
@@ -233,7 +237,7 @@ export const courseContent: CourseContent = {
               {
                 id: '3',
                 title: 'Clase 3',
-                content: geniallyIframePeriodo2,
+                content: geniallyIframePeriodo2_11,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 3 y desarrolla las actividades propuestas.',
                 imageUrl: '/images/11/periodo2/periodo2_clase3.png',
                 imageHint: 'filosofo griego'
@@ -241,7 +245,7 @@ export const courseContent: CourseContent = {
               {
                 id: '4',
                 title: 'Clase 4',
-                content: geniallyIframePeriodo2,
+                content: geniallyIframePeriodo2_11,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 4 y desarrolla las actividades propuestas.',
                 imageUrl: '/images/11/periodo2/periodo2_clase4.png',
                 imageHint: 'reloj antiguo'
@@ -249,7 +253,7 @@ export const courseContent: CourseContent = {
               {
                 id: '5',
                 title: 'Clase 5',
-                content: geniallyIframePeriodo2,
+                content: geniallyIframePeriodo2_11,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 5 y desarrolla las actividades propuestas.',
                 imageUrl: '/images/11/periodo2/periodo2_clase5.png',
                 imageHint: 'cosmos galaxia'
@@ -257,7 +261,7 @@ export const courseContent: CourseContent = {
               {
                 id: '6',
                 title: 'Clase 6',
-                content: geniallyIframePeriodo2,
+                content: geniallyIframePeriodo2_11,
                 estimatedTime: 'Ve a la página 4, haz clic en la Clase 6 y desarrolla las actividades propuestas.',
                 imageUrl: '/images/11/periodo2/periodo2_clase6.png',
                 imageHint: 'etica balanza'
@@ -271,7 +275,7 @@ export const courseContent: CourseContent = {
           classes: Array.from({ length: 6 }, (_, j) => ({
               id: `${j + 1}`,
               title: `Clase ${j + 1}`,
-              content: geniallyIframePeriodo3,
+              content: geniallyIframePeriodo3_11,
               estimatedTime: `Ve a la página 4, haz clic en la Clase ${j + 1} y desarrolla las actividades propuestas.`,
               imageUrl: `/images/11/periodo3/periodo3_clase${j + 1}.png`,
               imageHint: 'debate publico'
@@ -284,7 +288,7 @@ export const courseContent: CourseContent = {
           classes: Array.from({ length: 6 }, (_, j) => ({
               id: `${j + 1}`,
               title: `Clase ${j + 1}`,
-              content: geniallyIframePeriodo4,
+              content: geniallyIframePeriodo4_11,
               estimatedTime: `Ve a la página 4, haz clic en la Clase ${j + 1} y desarrolla las actividades propuestas.`,
               imageUrl: `/images/11/periodo4/periodo4_clase${j + 1}.png`,
               imageHint: 'redes neuronales'
