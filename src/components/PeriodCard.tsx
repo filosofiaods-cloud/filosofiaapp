@@ -39,11 +39,17 @@ export function PeriodCard({ gradeId, period, isUnlocked, isCompleted, progressP
     buttonVariant = "secondary";
   }
 
+  let displayTitle = period.title;
+  if (gradeId === '11') {
+    displayTitle = period.title.split('.')[0];
+  }
+
+
   return (
     <Card className={`flex flex-col justify-between ${cardStyle} transition-all hover:shadow-xl`}>
       <CardHeader>
         <div className="flex justify-between items-start">
-          <CardTitle className="text-2xl font-headline text-primary">{period.title}</CardTitle>
+          <CardTitle className="text-2xl font-headline text-primary">{displayTitle}</CardTitle>
           {statusIcon}
         </div>
         <CardDescription className="text-sm text-muted-foreground">{statusText}</CardDescription>

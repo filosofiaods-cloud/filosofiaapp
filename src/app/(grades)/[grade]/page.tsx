@@ -32,7 +32,7 @@ export default function GradePage() {
         <Button variant="outline" onClick={() => router.push('/')} className="flex items-center self-start sm:self-auto">
           <ArrowLeft className="mr-2 h-4 w-4" /> Volver a Selección de Ciclo
         </Button>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-headline text-primary text-center sm:text-left">{grade.title}: Periodos</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-headline text-primary text-center sm:text-left">{grade.title}</h1>
       </div>
       
       {certificateEligible && (
